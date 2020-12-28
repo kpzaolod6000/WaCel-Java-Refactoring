@@ -66,3 +66,59 @@ Angelo Perez Rodriguez
 Kelvin Pucho Zevallos 
 
 Luis Vilcapaza Flores
+## Actividades
+Se aplico Pruebas Unitarias y la refactorizacion al archivo PosTagImprove.java
+1. Pruebas Unitarias
+
+2. Refactoring
+
+# PosTagImprove.java
+```sh
+ WACeL-Java\src\main\java\pe\edu\unsa\daisi\lis\cel\util\nlp\PosTagImprove
+```
+### Funcion getPosTagsAsString: 
+Cambio de **StringBuffer tags = new StringBuffer("")** cambio por  **StringBuilder tags = new StringBuilder("")**, ya que es mas rapida la operacion entre hilos que va a tener el programa
+### Funcion adjustPosTags
+Borrar todos los comentarios ya que no son necesiarios ademas que va a saturar el programa y la legibilidad de este 
+Comentarios eliminados: **System.out.println(getPosTagsAsString(tokens, 0, tokens.size()))**
+### Funcion adjustNounPosTags
+- En primer lugar nos piden cambiar el nombre de la funcion de **adjustNounPosTags** se nos pide borrar por lo que es una funcion larga pero no se borrara porque tambien hay una regla de colocar el nombre de las funciones respecto a lo que va hacer ademas de que con esta funcion de puede guiar con las demas funciones que se crearon
+- Eliminar **List<CustomToken> nouns = new ArrayList<>()** ya que nunca se usa esta variable
+- Eliminacion de comentario **i: position in the analysis tokens array** 
+- Cambio de variable **REGEX_PREV_POS_TAGS** por **rtags** para que no exista demora en lectura del condigo 
+- Eliminar comentarios innecesarios como **System.out.println("PTR1 Token: " + noun.getStem())** ya que dificultan la lectura del codigo
+- Cambio de **REGEX_PREV_POS_TAGS** y **REGEX_NEXT_POS_TAGS** por  **regexprevpostags** y **regexnextpostags** respectivamente en todo el codigo para que tenga una mejor lectura de codigo
+- Eliminacion de comentarios inncesarios como **System.out.println("PTR2 Token: " + noun.getStem());**
+- Eliminacion de comentarios innecesarios en todo el codigo que no permiten legibilidad al codigo
+- Eliminar variables **REGEX_PREV_POS_TAGS** en linea 238 y **String prevPOSs =   getPosTagsAsString(tokens, 0, noun.getIndex())** por que nunca se usan y son variables basura
+-  Eliminar variables **REGEX_NEXT_POS_TAGS** en linea 261 y **String nextvPOSs =   getPosTagsAsString(tokens, noun.getIndex()+1, tokens.size())** linea 262 por que nunca se usan y son variables basura 
+### Funcion adjustVerbPosTags
+- En primer lugar nos piden cambiar el nombre de la funcion de **adjustVerbPosTags** no se puede borrar por la misma explicacion de la antigua funcion
+- **List<CustomToken> verbs = new ArrayList<>()** eliminar esta funcion porque no es usada nunca en el codigo
+- Eliminacion de comentarios innecesarios en todo el codigo que no permiten legibilidad al codigo
+- Cambio de **REGEX_PREV_POS_TAGS** y **REGEX_NEXT_POS_TAGS** por  **regexprevpostags** y **regexnextpostags** respectivamente en todo el codigo para que tenga una mejor lectura de codigo
+- Eliminacion de **REGEX_NEXT_POS_TAGS** y **String nextPOSs =  getPosTagsAsString(tokens, verb.getIndex()+1, tokens.size())** ya que nunca se usan
+- Eliminacion de **REGEX_PREV_POS_TAGS** y **prevPOSs = getPosTagsAsString(tokens, 0, verb.getIndex())** ya que nunca se usan
+- Reemplazar **System.out.println("PTR13 Token: " + verb.getStem())** y **System.out.println("PTR13 Token is Noun!")** por **logger.log** para poder señalar errores y es mas eficaz al momento de señalar errores tanto para usuarios como desarrolladores
+### Funcion updatePosTagWithNoun
+- En primer lugar nos piden cambiar el nombre de la funcion de **updatePosTagWithNouns** no se puede borrar por la misma explicacion de la antigua funcion
+- Eliminacion de comentarios innecesarios en todo el codigo que no permiten legibilidad al codigo
+- Cambio de **REGEX_PREV_POS_TAGS** y **REGEX_NEXT_POS_TAGS** por  **regexprevpostags** y **regexnextpostags** respectivamente en todo el codigo para que tenga una mejor lectura de codigo
+### Funcion adjustAdjectivePosTags
+- En primer lugar nos piden cambiar el nombre de la funcion de **adjustAdjectivePosTags** no se puede borrar por la misma explicacion de la antigua funcion
+- Eliminacion de comentarios innecesarios en todo el codigo que no permiten legibilidad al codigo
+- Cambio de **REGEX_PREV_POS_TAGS** y **REGEX_NEXT_POS_TAGS** por  **regexprevpostags** y **regexnextpostags** respectivamente en todo el codigo para que tenga una mejor lectura de codigo
+- Eliminacion de **REGEX_NEXT_POS_TAGS** y **String nextPOSs =  getPosTagsAsString(tokens, verb.getIndex()+1, tokens.size())** por que son variables sin uso del codigo y son basura para la lectura de este
+### Funcion adjustUseCaseKeywords
+- En primer lugar nos piden cambiar el nombre de la funcion de **adjustUseCaseKeywords** no se puede borrar por la misma explicacion de la antigua funcion
+- Eliminacion de comentarios innecesarios en todo el codigo que no permiten legibilidad al codigo
+- Cambio de **REGEX_USECASE_RETURN_KEYWORD** por **regexusecasereturnkeyword** espectivamente para que tenga una mejor lectura de codigo
+### Funcion containsWord
+- En primer lugar nos piden cambiar el nombre de la funcion de **containsWord** no se puede borrar por la misma explicacion de la antigua funcion
+### Funcion containsSimilarWord
+- En primer lugar nos piden cambiar el nombre de la funcion de **containsSimilarWord** no se puede borrar por la misma explicacion de la antigua funcion
+- Eliminacion de comentarios innecesarios en todo el codigo que no permiten legibilidad al codigo
+- cambiar todo **list.get(i).toUpperCase().equals(word)** por una variable **listing**
+### Main
+- Eliminacion de comentarios innecesarios en todo el codigo que no permiten legibilidad al codigo
+- Reemplazar **System.out.println("before: " +getPosTagsAsString(tokens, 0, tokens.size()))** y **System.out.println("after: " + getPosTagsAsString(tokens, 0, tokens.size()))** por **logger.log** para poder señalar errores y es mas eficaz al momento de señalar errores tanto para usuarios como desarrolladores
