@@ -57,3 +57,12 @@ Here are some helpful instructions to use the latest code:
 - E. Sarmiento, J. C. S. P. Leite, and E. Almentero. [C&L: Generating model based test cases from natural language requirements descriptions](https://ieeexplore.ieee.org/abstract/document/6908677/). IEEE 1st International Workshop on Requirements Engineering and Testing, 2014.
 
 - E Sarmiento. [Analysis of Natural Language Scenarios](https://www.maxwell.vrac.puc-rio.br/28193/28193.PDF), Ph.D Thesis, Department  of Informatics, PUC-Rio, Brazil, 2016.
+
+## Estudio de Refactorizacion hecho por:
+Jhoel Tapara Quispe
+
+Angelo Perez Rodriguez
+
+Kelvin Pucho Zevallos 
+
+Luis Vilcapaza Flores
