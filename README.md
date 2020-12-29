@@ -66,9 +66,24 @@ Angelo Perez Rodriguez
 Kelvin Pucho Zevallos 
 
 Luis Vilcapaza Flores
+
 ## Actividades
 Se aplico Pruebas Unitarias y la refactorizacion al archivo PosTagImprove.java
+
 1. Pruebas Unitarias
+```sh
+ WACeL-Java\src\test\java\pe\edu\unsa\daisi\lis\cel\util\nlp\TestPosTagImprover.java
+```
+
+# Clase PosTagImprover
+## Casos de Prueba calculadora
+| TestID | Method |Test Scenario | Test Data | Expected Results | Returned Results | Successful/Failed|
+| ------ | -------- |------------- | --------- | ---------------- | ---------------- |-------------|
+| 1 |  TestgetPosTagsAsString| Calcular los tokens de los sujetos,objetos,verbos,etc de una sentencia | Texto : It is well-known that the existing theoretical models for outlier detection make assumptions that may not reflect the true nature of outliers in every real application. With that in mind, this paper describes an empirical study performed on unsupervised outlier detection using 8 algorithms from the state-of-the-art and 8 datasets that refer to a variety of real-world tasks of high impact, like spotting cyberat- tacks, clinical pathologies and abnormalities in nature. We present the| PRP VBZ JJ IN DT VBG JJ NNS IN NN NN VBP NNS WDT MD RB VB DT JJ NN IN NNS IN DT JJ NN . IN DT IN NN , DT NN VBZ DT JJ NN VBN IN JJ NN NN VBG CD NNS IN DT JJ CC CD NNS WDT VBP TO DT NN IN JJ NNS IN JJ NN , IN VBG NN : NNS , JJ NNS CC NNS IN NN . PRP VBP DT | PRP VBZ JJ IN DT VBG JJ NNS IN NN NN VBP NNS WDT MD RB VB DT JJ NN IN NNS IN DT JJ NN . IN DT IN NN , DT NN VBZ DT JJ NN VBN IN JJ NN NN VBG CD NNS IN DT JJ CC CD NNS WDT VBP TO DT NN IN JJ NNS IN JJ NN , IN VBG NN : NNS , JJ NNS CC NNS IN NN . PRP VBP DT | pass | 
+
+
+
+
 
 2. Refactoring
 
