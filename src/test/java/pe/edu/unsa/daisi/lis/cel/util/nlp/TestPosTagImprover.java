@@ -22,21 +22,20 @@ public class TestPosTagImprover {
 	@Test
 	public void TestgetPosTagsAsString() {
 		List<CustomToken> tokens = null;		
-		String text = "The teacher teaches excellent";
+		String text = "It is well-known that the existing theoretical models for outlier detection make assumptions that may not reflect the true nature of outliers in every real application. With that in mind, this paper describes an empirical study performed on unsupervised outlier detection using 8 algorithms from the state-of-the-art and 8 datasets that refer to a variety of real-world tasks of high impact, like spotting cyberat- tacks, clinical pathologies and abnormalities in nature. We present the\r\n";
 		tokens = nlpAnalyzer.getTokens(text);
 		
 		PosTagImprover testtags = new PosTagImprover();
-		/* en este caso miramos si son valores sustantivos etc pero verificamos cuantos queremos*/
+	
 		
 		System.out.println(testtags.getPosTagsAsString(tokens,0,tokens.size()));
-		System.out.println(testtags.getPosTagsAsString(tokens,0,tokens.size()-1));
-		assertEquals("DT NN VBZ JJ", testtags.getPosTagsAsString(tokens,0,tokens.size()));
+		assertEquals("PRP VBZ JJ IN DT VBG JJ NNS IN NN NN VBP NNS WDT MD RB VB DT JJ NN IN NNS IN DT JJ NN . IN DT IN NN , DT NN VBZ DT JJ NN VBN IN JJ NN NN VBG CD NNS IN DT JJ CC CD NNS WDT VBP TO DT NN IN JJ NNS IN JJ NN , IN VBG NN : NNS , JJ NNS CC NNS IN NN . PRP VBP DT", testtags.getPosTagsAsString(tokens,0,tokens.size()));
 	}
 
 	@Test
 	public void TestupdatePosTagWithVerb() {
 		List<CustomToken> tokens = null;
-		String text = "The teacher teaches excellent";
+		String text = "What is Docker? Docker is a tool designed to make it easier to create, deploy, and run applications by using containers";
 		tokens = nlpAnalyzer.getTokens(text);
 		
 		//List<CustomToken> f = null;
