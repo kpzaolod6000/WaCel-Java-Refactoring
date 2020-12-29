@@ -80,9 +80,9 @@ Se aplico Pruebas Unitarias y la refactorizacion al archivo PosTagImprove.java
 | TestID | Method |Test Scenario | Test Data | Expected Results | Returned Results | Successful/Failed|
 | ------ | -------- |------------- | --------- | ---------------- | ---------------- |-------------|
 | 1 |  TestgetPosTagsAsString| Calcular los tokens de los sujetos,objetos,verbos,etc de una sentencia | Texto : It is well-known that the existing theoretical models for outlier detection make assumptions that may not reflect the true nature of outliers in every real application. With that in mind, this paper describes an empirical study performed on unsupervised outlier detection using 8 algorithms from the state-of-the-art and 8 datasets that refer to a variety of real-world tasks of high impact, like spotting cyberat- tacks, clinical pathologies and abnormalities in nature. We present the| PRP VBZ JJ IN DT VBG JJ NNS IN NN NN VBP NNS WDT MD RB VB DT JJ NN IN NNS IN DT JJ NN . IN DT IN NN , DT NN VBZ DT JJ NN VBN IN JJ NN NN VBG CD NNS IN DT JJ CC CD NNS WDT VBP TO DT NN IN JJ NNS IN JJ NN , IN VBG NN : NNS , JJ NNS CC NNS IN NN . PRP VBP DT | PRP VBZ JJ IN DT VBG JJ NNS IN NN NN VBP NNS WDT MD RB VB DT JJ NN IN NNS IN DT JJ NN . IN DT IN NN , DT NN VBZ DT JJ NN VBN IN JJ NN NN VBG CD NNS IN DT JJ CC CD NNS WDT VBP TO DT NN IN JJ NNS IN JJ NN , IN VBG NN : NNS , JJ NNS CC NNS IN NN . PRP VBP DT | pass | 
-
-
-
+| 2 |  TestupdatePosTagWithVerb |  | Texto : The 25-year-old lives in Rockford, Illinois, sharing a home with his parents about a half mile from the Don Carter Lanes, where he was a regular at the upstairs tavern, Shooter’s Bar and Grill. He was there as usual this past Saturday, but left earlier than he normally does.|  | pass | 
+| 3 | TestupdatePosTagPrepositionWithVerb |  | Texto : Carrera said there was some confusion on Monday, as some manamko' who weren't registered to come to the clinic showed up. Public Health is working with the island's mayors to register their manamko' to schedule when they should come to Okkodo.|  | pass | 
+| 3 | TestupdatePosTagVerbWithAdjective |  | Texto : They had complained that Maxwell was being mistreated by guards who wake her every 15 minutes at night and who subject her to repeated unnecessary searches while failing to adequately protect her from an outbreak of the coronavirus at the jail.|  | pass | 
 
 
 2. Refactoring
