@@ -84,6 +84,11 @@ Se aplico Pruebas Unitarias y la refactorizacion al archivo PosTagImprove.java
 | 3 | TestupdatePosTagPrepositionWithVerb |  | Texto : Carrera said there was some confusion on Monday, as some manamko' who weren't registered to come to the clinic showed up. Public Health is working with the island's mayors to register their manamko' to schedule when they should come to Okkodo.|  | pass | 
 | 3 | TestupdatePosTagVerbWithAdjective |  | Texto : They had complained that Maxwell was being mistreated by guards who wake her every 15 minutes at night and who subject her to repeated unnecessary searches while failing to adequately protect her from an outbreak of the coronavirus at the jail.|  | pass | 
 
+| 7 |  TestupdatePosTagWithNoun |  | Texto : Ever since our five children got their cell phones and started texting, Susan and I have used this technology to lift them up and encourage them|  |  | pass |
+| 8 |  TestadjustPrePositionPosTags |  | Texto : We created a collaborative account for Maddy, Owen, and Cora under TextPlus Free account.  It’s free, and there are ads, so be forewarned.|  |  | pass |
+| 9 |  TestadjustAdjectivePosTags |  | Texto : to give the kids a bit of controlled freedom as they communicate with family members and friends that we agree upon|  |  | pass |
+| 10 |  TestadjustUseCaseKeywords |  | Texto : have a rule that the phone stays in the house and on our main living area, not downstairs or in bedrooms|  |  | pass |
+| 11 |  getVerbBaseFromThirdPerson |  | Texto : Are our kids young for this? Probably. But it’s a different day and age, folks, and we’re doing the best we can|  |  | pass |
 
 2. Refactoring
 
