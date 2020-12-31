@@ -1,13 +1,5 @@
 # WACeL-Java
-# Automated Analysis of Natural Language Requirements: Scenarios &amp; Lexicons Tool
 
-C&L is a web application (Java, MySql) for editing, visualization and analysis of scenarios. C&L architecture is based on layers style, divided into modules and developed using Domain-driven Design practices. Modules group functionalities to manage users (User), projects (Project), lexicon symbols (Language used in the application - LEL), scenarios (Scenario) and to perform Analysis. The input of the C&L is composed of projects containing scenarios in plain text format. The output is a set of formatted scenarios, where the relationships among scenarios are represented by hyperlinks (It facilitates the navigation between scenarios). Other outputs include: (1) A Petri-Net representing the scenarios and their relationships and (2) a Feedback with detailed information about scenarios analysis.
-
-Scenarios are often described using templates based on Cockburn [1] or scenario language proposed by Leite et al. [2].
-
-[1] A. Cockburn, Writing Effective Use Cases. Addison-Wesley, 2001.
-
-[2] J. C. S. P. Leite, G. Hadad, J. Doorn and G. Kaplan, A scenario construction process, Requirements Engineering Journal, Springer-Verlag London Limited, vol. 5, num. 1, pp. 38-61, 2000.
 ## Estudio de Refactorizacion hecho por:
 Jhoel Tapara Quispe
 
